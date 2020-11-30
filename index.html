@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title> Scratch </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/style.css">
+        
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="top">
+            <h1><a href="#">Item Container</a></h1>
+        </header>
+    
+        <nav class="flex-nav">
+            <a href="#" class="toggleNav"> ☰ Menu </a>
+            <ul>
+                <li><a href="#">Item 01</a></li>
+                <li><a href="#">Item 02</a></li>
+                <li><a href="#">Item 03</a></li>
+                <li><a href="#">Item 04</a></li>
+                <li><a href="#">Item 05</a></li>
+                <li><a href="#">Item 06</a></li>
+
+                <li class="social"><a href="https://www.linkedin.com/in/harry-mardirossian-457a51b6/"><i class="fa fa-id-card"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-briefcase"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-snowflake-o"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-bolt"></i></a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <img src="http://lorempixel.com/1000/600/abstract">
+        </section>
+
+        <section class="details">
+            <p>A scratchpad-esque environment to simulate a product page.</p>
+            <p>Useful for multiple layouts.</p>
+        </section>
+
+        <section class="signup">
+            <form action="" class="signup">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email Address">
+                <input type="submit" value="Sign me up!">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; Argy Bargy</p>
+        </footer>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+        $(function() {
+            $('.toggleNav').on('click', function() {
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });
+
+    </script>
+
+</body>
+</html>
